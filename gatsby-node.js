@@ -28,6 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 tags
               }
+              fileAbsolutePath
             }
           }
         }
@@ -42,9 +43,10 @@ exports.createPages = ({ graphql, actions }) => {
     const snippets = result.data.allMarkdownRemark.edges;
 
     snippets.forEach((post, index) => {
-
+      if (post.node.fileAbsolutePath.indexOf('README') !== -1)
+        return;
       createPage({
-        path: post.node.fields.slug,
+        path: `/snippet${post.node.fields.slug}`,
         component: snippetPage,
         context: {
           slug: post.node.fields.slug,
@@ -61,7 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
     }, []);
 
     tags.forEach(tag => {
-      const tagPath = `/tags/${toKebabCase(tag)}/`;
+      const tagPath = `/tag/${toKebabCase(tag)}/`;
       const tagRegex = `/^\\s*${tag}/`;
       createPage({
         path: tagPath,

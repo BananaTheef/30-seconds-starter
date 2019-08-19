@@ -63,7 +63,7 @@ const ListPage = props => {
               <AniLink
                 key={`tag_link_${tag}`}
                 paintDrip
-                to={`/tags/${tag}`}
+                to={`/tag/${tag}`}
                 hex={props.isDarkMode ? '#434E76' : '#FFFFFF'}
               >
                 {capitalize(tag)}

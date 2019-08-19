@@ -132,7 +132,7 @@ const ShortCard = ({
       <h4 className='card-title'>
         <AniLink
           paintDrip
-          to={`/${snippetData.id}`}
+          to={`/snippet/${snippetData.id}`}
           hex={isDarkMode ? '#434E76' : '#FFFFFF'}
         >
           {snippetData.title}
