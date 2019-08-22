@@ -30,13 +30,13 @@
   }
   .card-bottom {
     position: relative;
-    background: blue;
     margin-left: -1rem;
     margin-right: -1rem;
     border-radius: 0.125rem;
     border-top-left-radius: 22px;
   }
   .card-code {
+    position: relative;
     margin: 1.5rem 0px -1rem 0px;
     background: var(--pre-back-color);
     width: calc(100% - 36px);
@@ -126,7 +126,7 @@
 }
 
 // Tags
-.tag {
+:not(.token).tag {
   transition: 0.3s ease all;
   border: 2px solid var(--tag-border-color);
   border-radius: 0.25rem;

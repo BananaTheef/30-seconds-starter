@@ -62,6 +62,7 @@
 
 // Show/hide examples button (snippet card)
 .button.button-example-toggler {
+  position: relative;
   margin: -2rem 0px -1rem 0px;
   background: var(--pre-back-color);
   border-radius: 0px 0px 0.125rem 0.125rem;
