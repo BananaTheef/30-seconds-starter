@@ -1,4 +1,4 @@
-![contribution guidelines](https://i.imgur.com/FaNNcVH.png)
+# Contribution guidelines
 
 **30 seconds of code** is a community effort, so feel free to contribute in any way you can. Every contribution helps!
 
