@@ -93,7 +93,7 @@ const snippetA = () => null;
 <summary>Examples</summary>
 
 ```js
-undefined
+snippetA(''); // null
 ```
 </details>
 
@@ -118,7 +118,7 @@ const snippetB = () => undefined;
 <summary>Examples</summary>
 
 ```js
-undefined
+snippetB(''); // undefined
 ```
 </details>
 
