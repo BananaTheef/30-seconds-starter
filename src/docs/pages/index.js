@@ -51,7 +51,9 @@ const IndexPage = props => {
 
   return (
     <>
-      <Meta />
+      <Meta 
+        meta={[{ name: `google-site-verification`, content: `ADD YOUR VERIFICATION CODE HERE` }]}
+      />
       <Shell withIcon={false} withTitle={false}>
         <img
           src={props.data.file.childImageSharp.original.src}
